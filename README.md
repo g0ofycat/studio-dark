@@ -4,16 +4,32 @@ Neovim colorscheme similar to Roblox Studio, darker tone.
 
 ## Colors
 
-| Role | Hex |
-|------|-----|
-| Background | `#0f0f11` |
-| Foreground | `#bcbec8` |
-| Red (soft) | `#f19191` |
-| Red (hard) | `#ec4949` |
-| Red (vivid) | `#fd3561` |
-| Green | `#8ee9b6` |
-| Yellow | `#f3eb8c` |
-| Cyan | `#6de5ff` |
+```
+studio_dark.colors = {
+	bg           = "#111216",
+	bg_dark      = "#0c0d10",
+	bg_light     = "#1a1d24",
+	bg_lighter   = "#23262f",
+
+	fg           = "#d7dae0",
+	fg_dark      = "#a7adb8",
+	fg_gutter    = "#5b6270",
+
+	border       = "#2a2f3a",
+	cursorline   = "#1b1f27",
+	selection    = "#253047",
+
+	red          = "#f06d6d",
+	orange       = "#e6a86b",
+	yellow       = "#e7d58c",
+	green        = "#7fcf9b",
+	cyan         = "#73c7ff",
+	blue         = "#5ea7ff",
+	purple       = "#b48ef7",
+
+	comment      = "#6b7280",
+}
+```
 
 ## Installation
 
