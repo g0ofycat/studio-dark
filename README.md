@@ -4,7 +4,7 @@ Neovim colorscheme similar to Roblox Studio, darker tone.
 
 ## Colors
 
-```
+```lua
 studio_dark.colors = {
 	bg           = "#111216",
 	bg_dark      = "#0c0d10",
