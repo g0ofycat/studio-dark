@@ -3,6 +3,7 @@ local studio_dark = {}
 studio_dark.colors = {
 	bg        = "#0f0f11",
 	fg        = "#bcbec8",
+	white     = "#ffffff",
 	red_soft  = "#f19191",
 	red_hard  = "#ec4949",
 	red_vivid = "#fd3561",
@@ -71,11 +72,11 @@ function studio_dark.load()
 	hl("GitGutterChange",     { fg = c.green })
 	hl("cssColor",            { fg = c.green })
 	hl("Function",            { fg = c.yellow })
-	hl("Directory",           { fg = c.red_vivid })
-	hl("markdownLinkText",    { fg = c.red_vivid })
-	hl("javaScriptBoolean",   { fg = c.red_vivid })
-	hl("Include",             { fg = c.red_vivid })
-	hl("Storage",             { fg = c.red_vivid })
+	hl("Directory",           { fg = c.white })
+	hl("markdownLinkText",    { fg = c.white })
+	hl("javaScriptBoolean",   { fg = c.yellow })
+	hl("Include",             { fg = c.white })
+	hl("Storage",             { fg = c.white })
 	hl("cssClassName",        { fg = c.red_vivid })
 	hl("cssClassNameDot",     { fg = c.red_vivid })
 	hl("Statement",           { fg = c.cyan })
@@ -95,8 +96,57 @@ function studio_dark.load()
 	hl("StatusLineNC",        { fg = c.fg,       bg = c.bg })
 	hl("Search",              { fg = c.fg,       bg = c.gray_mid })
 	hl("VertSplit",           { fg = c.gray_ui })
+	hl("WinSeparator",        { fg = c.gray_ui })
 	hl("Visual",              {                  bg = c.gray_ui })
-end
 
+	hl("@keyword",            { link = "Keyword" })
+	hl("@function",           { link = "Function" })
+	hl("@string",             { link = "String" })
+	hl("@comment",            { link = "Comment" })
+	hl("@variable",           { fg = c.fg })
+	hl("@operator",           { link = "Operator" })
+	hl("@constant",           { link = "Constant" })
+	hl("@type",               { link = "Type" })
+	hl("@boolean",            { fg = c.yellow })
+	hl("@number",             { link = "Number" })
+	hl("@punctuation",        { link = "Delimiter" })
+
+	hl("NormalFloat",         { fg = c.fg,       bg = c.bg }) 
+	hl("FloatBorder",         { fg = c.gray_mid, bg = c.bg })
+	hl("FloatTitle",          { fg = c.cyan,     bold = true })
+
+	hl("DiagnosticError",     { fg = c.red_soft })
+	hl("DiagnosticWarn",      { fg = c.yellow })
+	hl("DiagnosticInfo",      { fg = c.cyan })
+	hl("DiagnosticHint",      { fg = c.green })
+
+	hl("TelescopeNormal",       { fg = c.fg,       bg = c.bg })
+	hl("TelescopeBorder",       { fg = c.gray_ui,  bg = c.bg })
+	hl("TelescopePromptNormal", { fg = c.fg,       bg = c.gray_ui })
+	hl("TelescopePromptBorder", { fg = c.cyan,     bg = c.gray_ui })
+	hl("TelescopePromptTitle",  { fg = c.bg,       bg = c.cyan, bold = true })
+	hl("TelescopeSelection",    { bg = c.gray_ui,  bold = true })
+	hl("TelescopeSelectionCaret", { fg = c.red_vivid })
+	hl("TelescopeMatching",     { fg = c.yellow,   bold = true })
+
+	hl("NeoTreeNormal",         { fg = c.fg,       bg = c.bg })
+	hl("NeoTreeNormalNC",       { fg = c.fg,       bg = c.bg })
+	hl("NeoTreeWinSeparator",   { fg = c.gray_ui,  bg = c.bg })
+	hl("NeoTreeGitAdded",       { fg = c.green })
+	hl("NeoTreeGitModified",    { fg = c.yellow })
+	hl("NeoTreeGitDeleted",     { fg = c.red_soft })
+	hl("NvimTreeNormal",        { fg = c.fg,       bg = c.bg })
+	hl("NvimTreeNormalNC",      { fg = c.fg,       bg = c.bg })
+	hl("NvimTreeWinSeparator",  { fg = c.gray_ui,  bg = c.bg })
+
+	hl("GitSignsAdd",           { fg = c.green,    bg = c.bg })
+	hl("GitSignsChange",        { fg = c.yellow,   bg = c.bg })
+	hl("GitSignsDelete",        { fg = c.red_soft, bg = c.bg })
+
+	hl("BufferLineFill",            { bg = c.bg })
+	hl("BufferLineBackground",      { fg = c.gray_dim, bg = c.bg })
+	hl("BufferLineBufferSelected",  { fg = c.fg,       bg = c.bg, bold = true })
+	hl("BufferLineSeparator",       { fg = c.gray_ui,  bg = c.bg })
+end
 
 return studio_dark
