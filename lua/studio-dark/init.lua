@@ -1,10 +1,10 @@
 local studio_dark = {}
 
 studio_dark.colors = {
-	bg           = "#111216",
-	bg_dark      = "#0c0d10",
-	bg_light     = "#1a1d24",
-	bg_lighter   = "#23262f",
+	bg           = "#202020",
+	bg_dark      = "#1a1a1a",
+	bg_light     = "#242424",
+	bg_lighter   = "#232323",
 
 	fg           = "#d7dae0",
 	fg_dark      = "#a7adb8",
@@ -47,7 +47,7 @@ function studio_dark.load()
 	hl("NormalFloat",    { fg = c.fg, bg = c.bg_light })
 
 	hl("FloatBorder",    { fg = c.border, bg = c.bg_light })
-	hl("FloatTitle",     { fg = c.blue, bold = true })
+	hl("FloatTitle",     { fg = c.blue, bg = "NONE", bold = true })
 
 	hl("CursorLine",     { bg = c.cursorline })
 	hl("CursorColumn",   { bg = c.cursorline })
@@ -151,7 +151,7 @@ function studio_dark.load()
 	hl("TelescopeBorder",         { fg = c.border, bg = c.bg })
 	hl("TelescopePromptNormal",   { fg = c.fg, bg = c.bg_light })
 	hl("TelescopePromptBorder",   { fg = c.blue, bg = c.bg_light })
-	hl("TelescopePromptTitle",    { fg = c.bg, bg = c.blue, bold = true })
+	hl("TelescopePromptTitle",    { fg = c.bg, bg = "NONE", bold = true })
 	hl("TelescopeSelection",      { bg = c.cursorline })
 	hl("TelescopeSelectionCaret", { fg = c.blue })
 	hl("TelescopeMatching",       { fg = c.yellow, bold = true })
@@ -203,7 +203,7 @@ function studio_dark.load()
 	hl("CmpDocumentationBorder", { fg = c.border, bg = c.bg_light })
 
 	hl("Directory", { fg = c.blue })
-	hl("Title",     { fg = c.blue, bold = true })
+	hl("Title",     { fg = c.blue, bg = "NONE", bold = true })
 	hl("MatchParen",{ fg = c.yellow, bold = true })
 end
 
